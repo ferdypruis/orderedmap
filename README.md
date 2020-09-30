@@ -36,3 +36,24 @@ for _, k := range m.Keys() {
 // second = 2
 // third = 3
 ```
+
+`StringMap` implements `sort.Interface`
+```go
+var m StringMap
+m.Set("first", "1")
+m.Set("second", "2")
+m.Set("third", "3")
+
+// Reverse sort values
+sort.Sort(sort.Reverse(m))
+
+for _, k := range m.Keys() {
+    v, _ := m.Value(k)
+    fmt.Println(k, "=", v)
+}
+
+// Output:
+// third = 3
+// second = 2
+// first = 1
+```
