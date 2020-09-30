@@ -1,4 +1,6 @@
 # orderedmap
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/ferdypruis/orderedmap)](https://pkg.go.dev/github.com/ferdypruis/orderedmap)
+
 An ordered Go `map[string]string`, to for example generate or parse a JSON object with sorted keys.
 
 Despite objects being an unordered set of name/value pairs in JSON, there are some implementations
